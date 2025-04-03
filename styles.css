@@ -16,6 +16,7 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 /* हेडर */
@@ -41,23 +42,28 @@ header h1 {
 /* नेव्हिगेशन */
 nav ul {
     list-style: none;
-    padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin: 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
 }
 
 /* हीरो विभाग */
 .hero {
-    background: #303f9f; /* गडद निळा */
+    background: #303f9f;
     color: white;
     padding: 60px 0;
     text-align: center;
@@ -72,11 +78,17 @@ nav ul li a {
 }
 
 .hero .cta {
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #ff9800;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+    font-size: 1.2rem;
+}
+
+.hero .cta:hover {
+    background-color: #e68900;
 }
 
 /* बॅनर */
@@ -89,6 +101,7 @@ nav ul li a {
 /* विभाग स्टाइलिंग */
 section {
     padding: 40px 0;
+    text-align: center;
 }
 
 section h2 {
@@ -100,105 +113,65 @@ section h2 {
 /* सोशल मीडिया लिंक्स */
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 ul li {
     margin: 10px 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 ul li a {
-    color: #5c6bc0; /* निळा रंग */
+    color: #007BFF;
+    font-weight: bold;
     text-decoration: none;
 }
 
 ul li a:hover {
-    color: #ff4c4c; /* लाल रंग */
+    color: #ff4c4c;
+    text-decoration: underline;
 }
 
 /* फूटर */
 footer {
-    background: #212121; /* गडद पार्श्वभूमी */
+    background: #121212;
     color: white;
     padding: 20px 0;
     text-align: center;
     font-size: 1rem;
 }
 
-/* सोशल मीडिया बटण स्टाइल्स */
-.social-media {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.social-btn {
-    padding: 10px 20px;
-    margin: 10px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.instagram {
-    background-color: #E1306C;
-}
-
-.youtube {
-    background-color: #FF0000;
-}
-
-.social-btn:hover {
-    opacity: 0.8;
-}
-
-/* फीडबॅक विभाग */
-.feedback {
-    text-align: center;
-    margin: 40px 0;
-}
-
-.feedback form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.feedback textarea {
-    width: 80%;
-    height: 100px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.feedback button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.feedback button:hover {
-    background-color: #0056b3;
+footer p {
+    margin: 5px 0;
+    color: #bbb;
 }
 
 /* प्रतिसादक्षम डिझाइन */
 @media screen and (max-width: 768px) {
-    .content {
-        padding: 10px;
+    .container {
+        width: 95%;
     }
 
-    .social-btn {
-        padding: 8px 15px;
-        font-size: 1em;
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .feedback textarea {
-        width: 90%;
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta {
+        font-size: 1rem;
+        padding: 10px 20px;
     }
 }
