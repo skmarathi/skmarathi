@@ -1,145 +1,65 @@
 /* ग्लोबल स्टाइल्स */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #212121; /* गडद पार्श्वभूमी */
-    color: #f0f0f0; /* हलके टेक्स्ट */
-}
+{ margin: 0; padding: 0; box-sizing: border-box; }
 
-/* कंटेनर */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-/* हेडर */
-header {
-    background: #4a148c; /* गडद जांभळा */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
+body { font-family: 'Arial', sans-serif; line-height: 1.6; background-color: #212121; /* गडद पार्श्वभूमी / color: #f0f0f0; / हलके टेक्स्ट */ }
 
-header h1 {
-    font-size: 2.5rem;
-    font-family: 'Georgia', serif;
-}
+/* कंटेनर */ .container { width: 80%; margin: 0 auto; padding: 20px; }
 
-/* लोगो */
-.logo {
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-}
+/* हेडर / header { background: #4a148c; / गडद जांभळा */ color: white; padding: 20px 0; text-align: center; }
 
-/* नेव्हिगेशन */
+header h1 { font-size: 2.5rem; font-family: 'Georgia', serif; }
+
+/* लोगो */ .logo { max-width: 150px; height: auto; margin-bottom: 10px; }
+
+/* नेव्हिगेशन */ nav ul { list-style: none; text-align: center; }
+
+nav ul li { display: inline-block; margin: 10px; }
+
+nav ul li a { color: white; text-decoration: none; font-weight: bold; font-size: 1.2rem; }
+
+nav ul li a:hover { color: #ff9800; }
+
+/* हीरो विभाग */ .hero { background: #303f9f; color: white; padding: 60px 0; text-align: center; }
+
+.hero h2 { font-size: 2.5rem; }
+
+.hero p { font-size: 1.2rem; }
+
+.hero .cta { padding: 12px 25px; background-color: #ff9800; color: white; text-decoration: none; border-radius: 8px; transition: background 0.3s ease-in-out; font-size: 1.2rem; }
+
+.hero .cta:hover { background-color: #e68900; }
+
+/* बॅनर */ .banner { max-width: 100%; height: auto; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); }
+
+/* फूटर */ footer { background: #121212; color: white; padding: 20px 0; text-align: center; font-size: 1rem; }
+
+footer p { margin: 5px 0; color: #bbb; }
+
+/* प्रतिसादक्षम डिझाइन */ @media screen and (max-width: 768px) { .container { width: 95%; }
+
 nav ul {
-    list-style: none;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    color: #ff9800;
-}
-
-/* हीरो विभाग */
-.hero {
-    background: #303f9f;
-    color: white;
-    padding: 60px 0;
-    text-align: center;
+    margin: 5px 0;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
-}
-
-.hero .cta {
-    padding: 12px 25px;
-    background-color: #ff9800;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.3s ease-in-out;
-    font-size: 1.2rem;
-}
-
-.hero .cta:hover {
-    background-color: #e68900;
-}
-
-/* बॅनर */
-.banner {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* फूटर */
-footer {
-    background: #121212;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
     font-size: 1rem;
 }
 
-footer p {
-    margin: 5px 0;
-    color: #bbb;
+.cta {
+    font-size: 1rem;
+    padding: 10px 20px;
 }
 
-/* प्रतिसादक्षम डिझाइन */
-@media screen and (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .cta {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
 }
