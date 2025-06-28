@@ -7,18 +7,90 @@
   <meta name="description" content="SKmarathi - तुमच्या मराठी चित्रपट, सेलिब्रिटी गॉसिप आणि मनोरंजनाचे अद्ययावत ठिकाण." />
   <meta name="keywords" content="मराठी चित्रपट, सेलिब्रिटी गॉसिप, चित्रपट पुनरावलोकन, SKmarathi, नाटक, संगीत, मनोरंजन" />
   <meta name="author" content="Sandesh Khade" />
-  <link rel="stylesheet" href="styles.css">
- <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+  <style>
+    body {
+      font-family: 'Baloo 2', cursive;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #1B1464;
+    }
+    header {
+      background-color: #1B1464;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      display: block;
+    }
+    .breaking-news {
+      background-color: #E91E63;
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+      animation: scroll-left 15s linear infinite;
+      white-space: nowrap;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .container {
+      padding: 1rem;
+    }
+    .cta, button {
+      background-color: #8E24AA;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 250px;
+      margin: 5px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #1B1464;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .search-bar input {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 
 <body>
+
   <!-- 🔔 Breaking News -->
-  <div class="breaking-news">🔥 नवीन अपडेट: जयभीम पँथर ११ एप्रिलला प्रदर्शित होतोय!</div>
+  <div class="breaking-news">🔥 नवीन अपडेट: जयभीम पँथर चित्रपट प्रदर्शित झाला आहे! तुम्ही पाहिलात का?</div>
 
   <!-- Header -->
   <header>
-    <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/SKmarathi-logo.jpg" alt="SKmarathi Logo" class="logo" />
+    <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/SKmarathi-logo.jpg" alt="SKmarathi Logo" width="120" />
     <h1>SKmarathi मध्ये आपले स्वागत आहे</h1>
     <nav>
       <ul>
@@ -36,110 +108,100 @@
 
   <!-- Hero -->
   <section id="home" class="hero">
-    <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/skmarathiofficial-bn.jpg" alt="SKmarathi Banner" class="banner" />
-    <h2>मराठी चित्रपट, सेलिब्रिटी गॉसिप आणि मनोरंजनाची सर्व माहिती एका क्लिकवर.</h2>
-    <a href="#updates" class="cta">नवीन चित्रपट वाचा</a>
+    <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/skmarathiofficial-bn.jpg" alt="SKmarathi Banner" style="width:100%; max-height:400px; object-fit:cover;" />
+    <h2 style="text-align:center;">मराठी चित्रपट, सेलिब्रिटी गॉसिप आणि मनोरंजनाची सर्व माहिती एका क्लिकवर.</h2>
+    <div style="text-align:center;"><a href="#updates" class="cta">नवीन चित्रपट वाचा</a></div>
   </section>
 
   <!-- Movie Update -->
-  <section id="updates">
-    <div class="container">
-      <h2>जयभीम पँथर – एक संघर्ष</h2>
-      <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/jaybhim-panther-banner.jpg" alt="जयभीम पँथर पोस्टर" class="banner" />
-      <p><strong>रिलीझ तारीख:</strong> ११ एप्रिल २०२५</p>
-      <p><strong>दिग्दर्शक:</strong> निशांत नाथाराम धापसे</p>
-      <p><strong>निर्माते:</strong> भदंत शीलबोधी थेरो</p>
-      <p><strong>प्रमुख कलाकार:</strong> गौरव मोरे, चिन्मय उदगीरकर, मिलिंद शिंदे, सोनाली पाटील...</p>
-      <p><strong>कथानक:</strong> डॉ. आंबेडकर विचारांवर आधारित एक सामाजिक संघर्षमय कथा.</p>
-    </div>
+  <section id="updates" class="container">
+    <h2>जयभीम पँथर – एक संघर्ष</h2>
+    <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/jaybhim-panther-banner.jpg" alt="जयभीम पँथर पोस्टर" style="width:100%; max-width:600px;" />
+    <p><strong>रिलीझ:</strong> ११ एप्रिल २०२५ (चित्रपट प्रदर्शित झाला आहे)</p>
+    <p><strong>दिग्दर्शक:</strong> निशांत नाथाराम धापसे</p>
+    <p><strong>प्रमुख कलाकार:</strong> गौरव मोरे, चिन्मय उदगीरकर, मिलिंद शिंदे, सोनाली पाटील...</p>
+    <p><strong>कथानक:</strong> डॉ. आंबेडकर विचारांवर आधारित सामाजिक संघर्षमय कथा.</p>
   </section>
 
   <!-- Celebrity Updates -->
-  <section id="celebs">
-    <div class="container">
-      <h2>सेलिब्रिटी अपडेट्स</h2>
-      <div class="blog-post"><h3>ललित प्रभाकर</h3><p>नवीन सस्पेन्स थ्रिलर 'गूढ रात्र' लवकरच.</p></div>
-      <div class="blog-post"><h3>सई ताम्हणकर</h3><p>वेब सिरीज - 'तिची वाट'.</p></div>
-    </div>
+  <section id="celebs" class="container">
+    <h2>सेलिब्रिटी अपडेट्स</h2>
+    <div><strong>ललित प्रभाकर:</strong> नवीन थ्रिलर 'गूढ रात्र' लवकरच येणार.</div>
+    <div><strong>सई ताम्हणकर:</strong> वेब सिरीज – 'तिची वाट'.</div>
   </section>
 
   <!-- TV Shows -->
-  <section id="shows">
-    <div class="container">
-      <h2>नवीन टीव्ही शोज</h2>
-      <ul>
-        <li>🌟 'कॉमेडी धमाका' - सोमवार ते शुक्रवार रात्री ८ वा.</li>
-        <li>🎤 'झी मराठी सारेगमप' - शनिवार-रविवार रात्री ९ वा.</li>
-        <li>📺 'मन उधाण वाऱ्याचे' - सोमवार ते शनिवार दुपारी १ वा.</li>
-      </ul>
-    </div>
+  <section id="shows" class="container">
+    <h2>नवीन टीव्ही शोज</h2>
+    <ul>
+      <li>🌟 'कॉमेडी धमाका' - सोम–शनि रात्री ८ वा.</li>
+      <li>🎤 'सारेगमप' - रविवार ९ वा.</li>
+      <li>📺 'मन उधाण वाऱ्याचे' - रोज दुपारी १ वा.</li>
+    </ul>
   </section>
 
   <!-- Poems -->
-  <section id="poems">
-    <div class="container">
-      <h2>आजची कविता</h2>
-      <div class="poem-card">
-        <h3>"उधाणलेल्या आठवणी"</h3>
-        <p>उधाणले तुझ्या आठवणींचं गार वाऱ्यावरचं गाणं,<br>माझ्या एकटेपणाला भेटतं... रोज एक नवं जानं.</p>
-      </div>
-      <div class="poem-card">
-        <h3>"आभाळ"</h3>
-        <p>नीळसर त्या आभाळात, विचार माझे हरवले,<br>तुझ्या स्पर्शाच्या आठवणींनी, मनाचे किनारे भरले.</p>
-      </div>
-    </div>
+  <section id="poems" class="container">
+    <h2>आजची कविता</h2>
+    <div><strong>"उधाणलेल्या आठवणी"</strong><br>उधाणले तुझ्या आठवणींचं गार वाऱ्यावरचं गाणं,<br>माझ्या एकटेपणाला भेटतं... रोज एक नवं जानं.</div>
+    <br />
+    <div><strong>"आभाळ"</strong><br>नीळसर त्या आभाळात, विचार माझे हरवले,<br>तुझ्या स्पर्शाच्या आठवणींनी, मनाचे किनारे भरले.</div>
   </section>
 
   <!-- Gallery -->
-  <section id="gallery">
-    <div class="container">
-      <h2>फोटो गॅलरी</h2>
-      <div class="gallery">
-        <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg" alt="गॅलरी 1" /></a>
-        <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg" alt="गॅलरी 2" /></a>
-        <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery3.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery3.jpg" alt="गॅलरी 3" /></a>
-      </div>
+  <section id="gallery" class="container">
+    <h2>फोटो गॅलरी</h2>
+    <div class="gallery">
+      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg" alt="गॅलरी 1" /></a>
+      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg" alt="गॅलरी 2" /></a>
+      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery3.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery3.jpg" alt="गॅलरी 3" /></a>
     </div>
   </section>
 
   <!-- Blog -->
-  <section id="blog">
-    <div class="container">
-      <h2>ब्लॉग व लेख</h2>
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="लेख शोधा..." />
-      </div>
-      <div class="blog-post"><h3>चित्रपट समीक्षा: गुलकंद</h3><p>प्रेम, संघर्ष आणि स्वाभिमान या त्रिसूत्रीवर आधारित...</p></div>
-      <div class="blog-post"><h3>मराठी सिनेमा आणि सामाजिक संदेश</h3><p>मराठी चित्रपट अनेकदा सामाजिक विषयांवर भाष्य करत आले आहेत...</p></div>
+  <section id="blog" class="container">
+    <h2>ब्लॉग व लेख</h2>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="लेख शोधा..." />
     </div>
+    <div class="blog-post"><strong>चित्रपट समीक्षा: गुलकंद</strong><br>प्रेम, संघर्ष आणि स्वाभिमान या त्रिसूत्रीवर आधारित...</div>
+    <div class="blog-post"><strong>मराठी सिनेमा आणि सामाजिक संदेश</strong><br>मराठी चित्रपट अनेकदा सामाजिक विषयांवर भाष्य करत आले आहेत...</div>
   </section>
-<section id="contactform">
-  <div class="container">
+
+  <!-- Instagram Reel -->
+  <section class="container">
+    <h2>📷 Instagram वरून थेट</h2>
+    <iframe src="https://www.instagram.com/reel/DE7xmxwsL5Y/embed" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="container">
     <h2>📬 संपर्क करा</h2>
     <form action="https://formsubmit.co/skmarathiofficial@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="तुमचं नाव" required>
-      <input type="email" name="email" placeholder="ईमेल पत्ता" required>
-      <textarea name="message" rows="5" placeholder="तुमचा संदेश..." required></textarea>
-
-      <!-- Optional Hidden Inputs -->
+      <input type="text" name="name" placeholder="तुमचं नाव" required><br>
+      <input type="email" name="email" placeholder="ईमेल पत्ता" required><br>
+      <textarea name="message" rows="5" placeholder="तुमचा संदेश..." required></textarea><br>
       <input type="hidden" name="_next" value="https://skmarathi.com/thanks.html">
       <input type="hidden" name="_captcha" value="false">
-
       <button type="submit">पाठवा</button>
     </form>
-  </div>
-</section>
-
-
+  </section>
 
   <!-- Footer -->
   <footer id="contact">
-    <div class="container">
-      <p>&copy; 2025 SKmarathi. सर्व हक्क राखीव.</p>
-      <p>संपर्क: <a href="">contactskmarathiofficial@gmail.com</a></p>
-    </div>
+    <p>&copy; 2025 SKmarathi. सर्व हक्क राखीव.</p>
+    <p>संपर्क: <a href="mailto:contactskmarathiofficial@gmail.com">contactskmarathiofficial@gmail.com</a></p>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script>
+    document.getElementById("searchInput").addEventListener("input", function () {
+      let input = this.value.toLowerCase();
+      document.querySelectorAll(".blog-post").forEach(function (post) {
+        post.style.display = post.textContent.toLowerCase().includes(input) ? "block" : "none";
+      });
+    });
+  </script>
+
 </body>
 </html>
