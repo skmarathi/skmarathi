@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SKmarathi - मराठी चित्रपट, गॉसिप आणि मनोरंजन</title>
   <meta name="description" content="SKmarathi - तुमच्या मराठी चित्रपट, सेलिब्रिटी गॉसिप आणि मनोरंजनाचे अद्ययावत ठिकाण." />
-  <meta name="keywords" content="मराठी चित्रपट, सेलिब्रिटी गॉसिप, चित्रपट पुनरावलोकन, SKmarathi, नाटक, संगीत, मनोरंजन" />
-  <meta name="author" content="Sandesh Khade" />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
   <style>
@@ -16,46 +14,53 @@
       background-color: #f4f4f4;
       color: #1B1464;
     }
+
     header {
       background-color: #1B1464;
       color: white;
-      padding: 1rem 0.5rem;
       text-align: center;
+      padding: 1rem 0.5rem;
     }
+
     .logo-title {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
+
     .logo-title img {
-      max-width: 80px;
+      max-width: 90px;
       height: auto;
-      margin-bottom: 0.5rem;
     }
+
     .logo-title h1 {
-      margin: 0.2rem;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
     }
+
     nav ul {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       list-style: none;
       padding: 0;
-      margin: 0.5rem 0 0;
+      margin: 0.5rem 0;
     }
+
     nav ul li {
-      margin: 0.3rem;
+      margin: 4px;
     }
+
     nav ul li a {
-      text-decoration: none;
+      background-color: #3949ab;
       color: white;
       padding: 0.5rem 1rem;
-      display: block;
       border-radius: 6px;
-      background-color: #3949ab;
-      font-size: 15px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
     }
+
     .breaking-news {
       background-color: #E91E63;
       color: white;
@@ -64,13 +69,19 @@
       animation: scroll-left 15s linear infinite;
       white-space: nowrap;
     }
+
     @keyframes scroll-left {
       0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
+
     .container {
       padding: 1rem;
+      max-width: 1200px;
+      margin: auto;
+      box-sizing: border-box;
     }
+
     .cta, button {
       background-color: #8E24AA;
       color: white;
@@ -81,24 +92,28 @@
       display: inline-block;
       margin-top: 1rem;
     }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
+
     .gallery img {
       width: 100%;
       max-width: 150px;
       margin: 5px;
       border-radius: 10px;
     }
+
     footer {
       background-color: #1B1464;
       color: white;
       text-align: center;
       padding: 1rem;
     }
-    .search-bar input, input, textarea {
+
+    input, textarea {
       width: 100%;
       max-width: 600px;
       padding: 0.75rem;
@@ -107,32 +122,41 @@
       border: 1px solid #ccc;
       box-sizing: border-box;
     }
+
     iframe {
       width: 100%;
-      max-width: 100%;
+      aspect-ratio: 9 / 16;
+      border-radius: 10px;
       border: none;
-      border-radius: 8px;
     }
 
-    @media (max-width: 600px) {
+    /* Responsive Media Queries */
+    @media (max-width: 768px) {
       .logo-title h1 {
-        font-size: 1.2rem;
-        text-align: center;
+        font-size: 1.1rem;
       }
+
       nav ul {
         flex-direction: column;
         align-items: center;
       }
-      nav ul li a {
-        width: 90%;
-        margin: 2px auto;
+
+      nav ul li {
+        width: 100%;
+        text-align: center;
       }
+
       .gallery img {
         max-width: 100px;
+      }
+
+      .cta {
+        width: 100%;
       }
     }
   </style>
 </head>
+
 <body>
 
   <div class="breaking-news">🔥 नवीन अपडेट: जयभीम पँथर चित्रपट प्रदर्शित झाला आहे! तुम्ही पाहिलात का?</div>
@@ -165,20 +189,20 @@
   <section id="updates" class="container">
     <h2>जयभीम पँथर – एक संघर्ष</h2>
     <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/jaybhim-panther-banner.jpg" alt="जयभीम पँथर पोस्टर" style="width:100%; max-width:600px;" />
-    <p><strong>रिलीझ:</strong> ११ एप्रिल २०२५ (चित्रपट प्रदर्शित झाला आहे)</p>
+    <p><strong>रिलीझ:</strong> ११ एप्रिल २०२५</p>
     <p><strong>दिग्दर्शक:</strong> निशांत नाथाराम धापसे</p>
-    <p><strong>प्रमुख कलाकार:</strong> गौरव मोरे, चिन्मय उदगीरकर, मिलिंद शिंदे, सोनाली पाटील...</p>
+    <p><strong>कलाकार:</strong> गौरव मोरे, चिन्मय उदगीरकर, मिलिंद शिंदे, सोनाली पाटील...</p>
     <p><strong>कथानक:</strong> डॉ. आंबेडकर विचारांवर आधारित सामाजिक संघर्षमय कथा.</p>
   </section>
 
   <section id="celebs" class="container">
     <h2>सेलिब्रिटी अपडेट्स</h2>
-    <p><strong>ललित प्रभाकर:</strong> नवीन थ्रिलर 'गूढ रात्र' लवकरच येणार.</p>
-    <p><strong>सई ताम्हणकर:</strong> वेब सिरीज – 'तिची वाट'.</p>
+    <p><strong>ललित प्रभाकर:</strong> 'गूढ रात्र' थ्रिलर लवकरच येणार.</p>
+    <p><strong>सई ताम्हणकर:</strong> 'तिची वाट' वेब सिरीज येतेय.</p>
   </section>
 
   <section id="shows" class="container">
-    <h2>नवीन टीव्ही शोज</h2>
+    <h2>टीव्ही शो</h2>
     <ul>
       <li>🌟 'कॉमेडी धमाका' - सोम–शनि रात्री ८ वा.</li>
       <li>🎤 'सारेगमप' - रविवार ९ वा.</li>
@@ -188,26 +212,24 @@
 
   <section id="poems" class="container">
     <h2>आजची कविता</h2>
-    <p><strong>"उधाणलेल्या आठवणी"</strong><br>उधाणले तुझ्या आठवणींचं गार वाऱ्यावरचं गाणं,<br>माझ्या एकटेपणाला भेटतं... रोज एक नवं जानं.</p>
-    <p><strong>"आभाळ"</strong><br>नीळसर त्या आभाळात, विचार माझे हरवले,<br>तुझ्या स्पर्शाच्या आठवणींनी, मनाचे किनारे भरले.</p>
+    <p><strong>"उधाणलेल्या आठवणी"</strong><br>उधाणले तुझ्या आठवणींचं गार वाऱ्यावरचं गाणं...</p>
+    <p><strong>"आभाळ"</strong><br>नीळसर त्या आभाळात, विचार माझे हरवले...</p>
   </section>
 
   <section id="gallery" class="container">
     <h2>फोटो गॅलरी</h2>
     <div class="gallery">
-      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg" alt="गॅलरी 1" /></a>
-      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg" alt="गॅलरी 2" /></a>
-      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery3.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery3.jpg" alt="गॅलरी 3" /></a>
+      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg" alt="Gallery1" /></a>
+      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg" alt="Gallery2" /></a>
+      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery3.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery3.jpg" alt="Gallery3" /></a>
     </div>
   </section>
 
   <section id="blog" class="container">
-    <h2>ब्लॉग व लेख</h2>
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="लेख शोधा..." />
-    </div>
-    <div class="blog-post"><strong>चित्रपट समीक्षा: गुलकंद</strong><br>प्रेम, संघर्ष आणि स्वाभिमान या त्रिसूत्रीवर आधारित...</div>
-    <div class="blog-post"><strong>मराठी सिनेमा आणि सामाजिक संदेश</strong><br>मराठी चित्रपट अनेकदा सामाजिक विषयांवर भाष्य करत आले आहेत...</div>
+    <h2>ब्लॉग</h2>
+    <input type="text" id="searchInput" placeholder="लेख शोधा..." />
+    <div class="blog-post"><strong>गुलकंद समीक्षा:</strong> प्रेम आणि संघर्ष...</div>
+    <div class="blog-post"><strong>सामाजिक विषय:</strong> मराठी सिनेमा...</div>
   </section>
 
   <section class="container">
@@ -241,5 +263,6 @@
       });
     });
   </script>
+
 </body>
 </html>
