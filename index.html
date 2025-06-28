@@ -22,6 +22,11 @@
       padding: 1rem;
       text-align: center;
     }
+    header img {
+      max-width: 100px;
+      display: block;
+      margin: 0 auto 0.5rem;
+    }
     nav ul {
       display: flex;
       flex-wrap: wrap;
@@ -55,6 +60,8 @@
     }
     .container {
       padding: 1rem;
+      max-width: 960px;
+      margin: auto;
     }
     .cta, button {
       background-color: #8E24AA;
@@ -65,16 +72,17 @@
       text-decoration: none;
       display: inline-block;
       margin-top: 1rem;
+      text-align: center;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 10px;
     }
     .gallery img {
       width: 100%;
       max-width: 150px;
-      margin: 5px;
       border-radius: 10px;
     }
     footer {
@@ -83,7 +91,9 @@
       text-align: center;
       padding: 1rem;
     }
-    .search-bar input, input, textarea {
+    .search-bar input,
+    input,
+    textarea {
       width: 100%;
       max-width: 600px;
       padding: 0.75rem;
@@ -94,40 +104,32 @@
     }
     iframe {
       width: 100%;
-      max-width: 100%;
       border: none;
       border-radius: 8px;
     }
 
-    /* Mobile responsiveness */
+    /* Responsive Changes */
     @media (max-width: 768px) {
       nav ul {
         flex-direction: column;
         align-items: center;
       }
-      nav ul li {
-        width: 100%;
-        text-align: center;
-      }
-      .cta {
-        width: 100%;
-        text-align: center;
-      }
       .gallery img {
         max-width: 100px;
+      }
+      .cta {
+        display: block;
+        width: 100%;
       }
     }
   </style>
 </head>
-
 <body>
 
-  <!-- 🔔 Breaking News -->
   <div class="breaking-news">🔥 नवीन अपडेट: जयभीम पँथर चित्रपट प्रदर्शित झाला आहे! तुम्ही पाहिलात का?</div>
 
-  <!-- Header -->
   <header>
-    <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/SKmarathi-logo.jpg" alt="SKmarathi Logo" width="100" />
+    <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/SKmarathi-logo.jpg" alt="SKmarathi Logo" />
     <h1>SKmarathi मध्ये आपले स्वागत आहे</h1>
     <nav>
       <ul>
@@ -143,14 +145,12 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
+  <section id="home" class="hero container">
     <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/skmarathiofficial-bn.jpg" alt="SKmarathi Banner" style="width:100%; max-height:400px; object-fit:cover;" />
     <h2 style="text-align:center;">मराठी चित्रपट, सेलिब्रिटी गॉसिप आणि मनोरंजनाची सर्व माहिती एका क्लिकवर.</h2>
     <div style="text-align:center;"><a href="#updates" class="cta">नवीन चित्रपट वाचा</a></div>
   </section>
 
-  <!-- Movie Update -->
   <section id="updates" class="container">
     <h2>जयभीम पँथर – एक संघर्ष</h2>
     <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/jaybhim-panther-banner.jpg" alt="जयभीम पँथर पोस्टर" style="width:100%; max-width:600px;" />
@@ -160,14 +160,12 @@
     <p><strong>कथानक:</strong> डॉ. आंबेडकर विचारांवर आधारित सामाजिक संघर्षमय कथा.</p>
   </section>
 
-  <!-- Celebrity Updates -->
   <section id="celebs" class="container">
     <h2>सेलिब्रिटी अपडेट्स</h2>
     <p><strong>ललित प्रभाकर:</strong> नवीन थ्रिलर 'गूढ रात्र' लवकरच येणार.</p>
     <p><strong>सई ताम्हणकर:</strong> वेब सिरीज – 'तिची वाट'.</p>
   </section>
 
-  <!-- TV Shows -->
   <section id="shows" class="container">
     <h2>नवीन टीव्ही शोज</h2>
     <ul>
@@ -177,14 +175,12 @@
     </ul>
   </section>
 
-  <!-- Poems -->
   <section id="poems" class="container">
     <h2>आजची कविता</h2>
     <p><strong>"उधाणलेल्या आठवणी"</strong><br>उधाणले तुझ्या आठवणींचं गार वाऱ्यावरचं गाणं,<br>माझ्या एकटेपणाला भेटतं... रोज एक नवं जानं.</p>
     <p><strong>"आभाळ"</strong><br>नीळसर त्या आभाळात, विचार माझे हरवले,<br>तुझ्या स्पर्शाच्या आठवणींनी, मनाचे किनारे भरले.</p>
   </section>
 
-  <!-- Gallery -->
   <section id="gallery" class="container">
     <h2>फोटो गॅलरी</h2>
     <div class="gallery">
@@ -194,7 +190,6 @@
     </div>
   </section>
 
-  <!-- Blog -->
   <section id="blog" class="container">
     <h2>ब्लॉग व लेख</h2>
     <div class="search-bar">
@@ -204,13 +199,11 @@
     <div class="blog-post"><strong>मराठी सिनेमा आणि सामाजिक संदेश</strong><br>मराठी चित्रपट अनेकदा सामाजिक विषयांवर भाष्य करत आले आहेत...</div>
   </section>
 
-  <!-- Instagram Reel -->
   <section class="container">
     <h2>📷 Instagram वरून थेट</h2>
     <iframe src="https://www.instagram.com/reel/DE7xmxwsL5Y/embed" height="500" allowfullscreen></iframe>
   </section>
 
-  <!-- Contact Form -->
   <section class="container">
     <h2>📬 संपर्क करा</h2>
     <form action="https://formsubmit.co/skmarathiofficial@gmail.com" method="POST">
@@ -223,7 +216,6 @@
     </form>
   </section>
 
-  <!-- Footer -->
   <footer id="contact">
     <p>&copy; 2025 SKmarathi. सर्व हक्क राखीव.</p>
     <p>संपर्क: <a href="mailto:contactskmarathiofficial@gmail.com">contactskmarathiofficial@gmail.com</a></p>
@@ -238,6 +230,5 @@
       });
     });
   </script>
-
 </body>
 </html>
