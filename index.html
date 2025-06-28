@@ -28,12 +28,18 @@
       justify-content: center;
       list-style: none;
       padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      margin: 0.3rem;
     }
     nav ul li a {
       text-decoration: none;
       color: white;
       padding: 0.5rem 1rem;
       display: block;
+      border-radius: 6px;
+      background-color: #3949ab;
     }
     .breaking-news {
       background-color: #E91E63;
@@ -60,9 +66,14 @@
       display: inline-block;
       margin-top: 1rem;
     }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .gallery img {
       width: 100%;
-      max-width: 250px;
+      max-width: 150px;
       margin: 5px;
       border-radius: 10px;
     }
@@ -72,13 +83,39 @@
       text-align: center;
       padding: 1rem;
     }
-    .search-bar input {
+    .search-bar input, input, textarea {
       width: 100%;
-      max-width: 400px;
-      padding: 0.5rem;
+      max-width: 600px;
+      padding: 0.75rem;
       margin-bottom: 1rem;
       border-radius: 6px;
       border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    iframe {
+      width: 100%;
+      max-width: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li {
+        width: 100%;
+        text-align: center;
+      }
+      .cta {
+        width: 100%;
+        text-align: center;
+      }
+      .gallery img {
+        max-width: 100px;
+      }
     }
   </style>
 </head>
@@ -90,7 +127,7 @@
 
   <!-- Header -->
   <header>
-    <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/SKmarathi-logo.jpg" alt="SKmarathi Logo" width="120" />
+    <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/SKmarathi-logo.jpg" alt="SKmarathi Logo" width="100" />
     <h1>SKmarathi मध्ये आपले स्वागत आहे</h1>
     <nav>
       <ul>
@@ -126,8 +163,8 @@
   <!-- Celebrity Updates -->
   <section id="celebs" class="container">
     <h2>सेलिब्रिटी अपडेट्स</h2>
-    <div><strong>ललित प्रभाकर:</strong> नवीन थ्रिलर 'गूढ रात्र' लवकरच येणार.</div>
-    <div><strong>सई ताम्हणकर:</strong> वेब सिरीज – 'तिची वाट'.</div>
+    <p><strong>ललित प्रभाकर:</strong> नवीन थ्रिलर 'गूढ रात्र' लवकरच येणार.</p>
+    <p><strong>सई ताम्हणकर:</strong> वेब सिरीज – 'तिची वाट'.</p>
   </section>
 
   <!-- TV Shows -->
@@ -143,9 +180,8 @@
   <!-- Poems -->
   <section id="poems" class="container">
     <h2>आजची कविता</h2>
-    <div><strong>"उधाणलेल्या आठवणी"</strong><br>उधाणले तुझ्या आठवणींचं गार वाऱ्यावरचं गाणं,<br>माझ्या एकटेपणाला भेटतं... रोज एक नवं जानं.</div>
-    <br />
-    <div><strong>"आभाळ"</strong><br>नीळसर त्या आभाळात, विचार माझे हरवले,<br>तुझ्या स्पर्शाच्या आठवणींनी, मनाचे किनारे भरले.</div>
+    <p><strong>"उधाणलेल्या आठवणी"</strong><br>उधाणले तुझ्या आठवणींचं गार वाऱ्यावरचं गाणं,<br>माझ्या एकटेपणाला भेटतं... रोज एक नवं जानं.</p>
+    <p><strong>"आभाळ"</strong><br>नीळसर त्या आभाळात, विचार माझे हरवले,<br>तुझ्या स्पर्शाच्या आठवणींनी, मनाचे किनारे भरले.</p>
   </section>
 
   <!-- Gallery -->
@@ -171,16 +207,16 @@
   <!-- Instagram Reel -->
   <section class="container">
     <h2>📷 Instagram वरून थेट</h2>
-    <iframe src="https://www.instagram.com/reel/DE7xmxwsL5Y/embed" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.instagram.com/reel/DE7xmxwsL5Y/embed" height="500" allowfullscreen></iframe>
   </section>
 
   <!-- Contact Form -->
   <section class="container">
     <h2>📬 संपर्क करा</h2>
     <form action="https://formsubmit.co/skmarathiofficial@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="तुमचं नाव" required><br>
-      <input type="email" name="email" placeholder="ईमेल पत्ता" required><br>
-      <textarea name="message" rows="5" placeholder="तुमचा संदेश..." required></textarea><br>
+      <input type="text" name="name" placeholder="तुमचं नाव" required>
+      <input type="email" name="email" placeholder="ईमेल पत्ता" required>
+      <textarea name="message" rows="5" placeholder="तुमचा संदेश..." required></textarea>
       <input type="hidden" name="_next" value="https://skmarathi.com/thanks.html">
       <input type="hidden" name="_captcha" value="false">
       <button type="submit">पाठवा</button>
