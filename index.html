@@ -19,13 +19,22 @@
     header {
       background-color: #1B1464;
       color: white;
-      padding: 1rem;
+      padding: 1rem 0.5rem;
       text-align: center;
     }
-    header img {
-      max-width: 100px;
-      display: block;
-      margin: 0 auto 0.5rem;
+    .logo-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo-title img {
+      max-width: 80px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+    .logo-title h1 {
+      margin: 0.2rem;
+      font-size: 1.5rem;
     }
     nav ul {
       display: flex;
@@ -33,7 +42,7 @@
       justify-content: center;
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin: 0.5rem 0 0;
     }
     nav ul li {
       margin: 0.3rem;
@@ -45,6 +54,7 @@
       display: block;
       border-radius: 6px;
       background-color: #3949ab;
+      font-size: 15px;
     }
     .breaking-news {
       background-color: #E91E63;
@@ -60,8 +70,6 @@
     }
     .container {
       padding: 1rem;
-      max-width: 960px;
-      margin: auto;
     }
     .cta, button {
       background-color: #8E24AA;
@@ -72,17 +80,16 @@
       text-decoration: none;
       display: inline-block;
       margin-top: 1rem;
-      text-align: center;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
     }
     .gallery img {
       width: 100%;
       max-width: 150px;
+      margin: 5px;
       border-radius: 10px;
     }
     footer {
@@ -91,9 +98,7 @@
       text-align: center;
       padding: 1rem;
     }
-    .search-bar input,
-    input,
-    textarea {
+    .search-bar input, input, textarea {
       width: 100%;
       max-width: 600px;
       padding: 0.75rem;
@@ -104,22 +109,26 @@
     }
     iframe {
       width: 100%;
+      max-width: 100%;
       border: none;
       border-radius: 8px;
     }
 
-    /* Responsive Changes */
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
+      .logo-title h1 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
       nav ul {
         flex-direction: column;
         align-items: center;
       }
+      nav ul li a {
+        width: 90%;
+        margin: 2px auto;
+      }
       .gallery img {
         max-width: 100px;
-      }
-      .cta {
-        display: block;
-        width: 100%;
       }
     }
   </style>
@@ -129,8 +138,10 @@
   <div class="breaking-news">🔥 नवीन अपडेट: जयभीम पँथर चित्रपट प्रदर्शित झाला आहे! तुम्ही पाहिलात का?</div>
 
   <header>
-    <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/SKmarathi-logo.jpg" alt="SKmarathi Logo" />
-    <h1>SKmarathi मध्ये आपले स्वागत आहे</h1>
+    <div class="logo-title">
+      <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/SKmarathi-logo.jpg" alt="SKmarathi Logo" />
+      <h1>SKmarathi मध्ये आपले स्वागत आहे</h1>
+    </div>
     <nav>
       <ul>
         <li><a href="#home">मुख्यपृष्ठ</a></li>
@@ -145,7 +156,7 @@
     </nav>
   </header>
 
-  <section id="home" class="hero container">
+  <section id="home" class="hero">
     <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/skmarathiofficial-bn.jpg" alt="SKmarathi Banner" style="width:100%; max-height:400px; object-fit:cover;" />
     <h2 style="text-align:center;">मराठी चित्रपट, सेलिब्रिटी गॉसिप आणि मनोरंजनाची सर्व माहिती एका क्लिकवर.</h2>
     <div style="text-align:center;"><a href="#updates" class="cta">नवीन चित्रपट वाचा</a></div>
