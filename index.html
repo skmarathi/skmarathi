@@ -149,19 +149,89 @@
   </header>
 
   <!-- Banner -->
-  <section id="home">
+  <section id="home" class="hero">
     <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/skmarathiofficial-bn.jpg" alt="SKmarathi Banner" style="width:100%; max-height:400px; object-fit:cover;" />
-    <div style="text-align:center; padding: 1rem;">
-      <h2>मराठी चित्रपट, सेलिब्रिटी गॉसिप आणि मनोरंजनाची सर्व माहिती एका क्लिकवर.</h2>
-      <a href="#updates" class="cta">नवीन चित्रपट वाचा</a>
+    <h2 style="text-align:center;">मराठी चित्रपट, सेलिब्रिटी गॉसिप आणि मनोरंजनाची सर्व माहिती एका क्लिकवर.</h2>
+    <div style="text-align:center;"><a href="#updates" class="cta">नवीन चित्रपट वाचा</a></div>
+  </section>
+
+  <section id="updates" class="container">
+    <h2>जयभीम पँथर – एक संघर्ष</h2>
+    <img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/jaybhim-panther-banner.jpg" alt="जयभीम पँथर पोस्टर" style="width:100%; max-width:600px;" />
+    <p><strong>रिलीझ:</strong> ११ एप्रिल २०२५</p>
+    <p><strong>दिग्दर्शक:</strong> निशांत नाथाराम धापसे</p>
+    <p><strong>कलाकार:</strong> गौरव मोरे, चिन्मय उदगीरकर, मिलिंद शिंदे, सोनाली पाटील...</p>
+    <p><strong>कथानक:</strong> डॉ. आंबेडकर विचारांवर आधारित सामाजिक संघर्षमय कथा.</p>
+  </section>
+
+  <section id="celebs" class="container">
+    <h2>सेलिब्रिटी अपडेट्स</h2>
+    <p><strong>ललित प्रभाकर:</strong> 'गूढ रात्र' थ्रिलर लवकरच येणार.</p>
+    <p><strong>सई ताम्हणकर:</strong> 'तिची वाट' वेब सिरीज येतेय.</p>
+  </section>
+
+  <section id="shows" class="container">
+    <h2>टीव्ही शो</h2>
+    <ul>
+      <li>🌟 'कॉमेडी धमाका' - सोम–शनि रात्री ८ वा.</li>
+      <li>🎤 'सारेगमप' - रविवार ९ वा.</li>
+      <li>📺 'मन उधाण वाऱ्याचे' - रोज दुपारी १ वा.</li>
+    </ul>
+  </section>
+
+  <section id="poems" class="container">
+    <h2>आजची कविता</h2>
+    <p><strong>"उधाणलेल्या आठवणी"</strong><br>उधाणले तुझ्या आठवणींचं गार वाऱ्यावरचं गाणं...</p>
+    <p><strong>"आभाळ"</strong><br>नीळसर त्या आभाळात, विचार माझे हरवले...</p>
+  </section>
+
+  <section id="gallery" class="container">
+    <h2>फोटो गॅलरी</h2>
+    <div class="gallery">
+      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg" alt="Gallery1" /></a>
+      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg" alt="Gallery2" /></a>
+      <a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery3.jpg" data-lightbox="gallery"><img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery3.jpg" alt="Gallery3" /></a>
     </div>
   </section>
 
-  <!-- Rest of your dynamic sections like updates, celebs, gallery etc... -->
+  <section id="blog" class="container">
+    <h2>ब्लॉग</h2>
+    <input type="text" id="searchInput" placeholder="लेख शोधा..." />
+    <div class="blog-post"><strong>गुलकंद समीक्षा:</strong> प्रेम आणि संघर्ष...</div>
+    <div class="blog-post"><strong>सामाजिक विषय:</strong> मराठी सिनेमा...</div>
+  </section>
+
+  <section class="container">
+    <h2>📷 Instagram वरून थेट</h2>
+    <iframe src="https://www.instagram.com/reel/DE7xmxwsL5Y/embed" height="500" allowfullscreen></iframe>
+  </section>
+
+  <section class="container">
+    <h2>📬 संपर्क करा</h2>
+    <form action="https://formsubmit.co/skmarathiofficial@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="तुमचं नाव" required>
+      <input type="email" name="email" placeholder="ईमेल पत्ता" required>
+      <textarea name="message" rows="5" placeholder="तुमचा संदेश..." required></textarea>
+      <input type="hidden" name="_next" value="https://skmarathi.com/thanks.html">
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">पाठवा</button>
+    </form>
+  </section>
+
   <footer id="contact">
     <p>&copy; 2025 SKmarathi. सर्व हक्क राखीव.</p>
     <p>संपर्क: <a href="mailto:contactskmarathiofficial@gmail.com">contactskmarathiofficial@gmail.com</a></p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script>
+    document.getElementById("searchInput").addEventListener("input", function () {
+      let input = this.value.toLowerCase();
+      document.querySelectorAll(".blog-post").forEach(function (post) {
+        post.style.display = post.textContent.toLowerCase().includes(input) ? "block" : "none";
+      });
+    });
+  </script>
 
 </body>
 </html>
