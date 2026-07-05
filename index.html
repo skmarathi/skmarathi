@@ -193,13 +193,179 @@ font-size:30px;color:#fff;cursor:pointer
 </section>
 
 <!-- POEMS -->
-<section id="poems">
-<h2>✍️ आजची कविता</h2>
-<div class="kavita-box">
-<div class="kavita-title" id="kavitaTitle"></div>
-<div class="kavita-text" id="kavitaText"></div>
+<!-- ===== आजची कविता ===== -->
+<section id="poems" class="poem-section">
+
+<h2 class="poem-heading">🌸 आजची कविता</h2>
+
+<div class="poem-card">
+
+<div class="poem-badge">
+✨ SKmarathi Original
 </div>
+
+<h3 class="poem-title">
+🤍 सखी...
+</h3>
+
+<p class="poem-text">
+
+मी जरी मराठीतला
+<span class="highlight">"संदेश"</span> असलो,
+
+तरी माझ्यासाठी तू
+बंगाली भाषेतला
+<span class="highlight">"संदेश"</span> आहेस...
+
+<br><br>
+
+आणि म्हणूनच,
+
+माझ्या आयुष्यातला
+सर्वात गोड
+<span class="highlight">"संदेश"</span>
+तूच आहेस... 😊🌸🤍
+
+<br><br>
+
+आणि हो...
+
+मला हा
+<span class="highlight">"संदेश"</span>
+खूप आवडतो! 😋☺️
+
+</p>
+
+</div>
+
 </section>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap');
+
+.poem-section{
+padding:40px 20px;
+}
+
+.poem-heading{
+text-align:center;
+font-size:34px;
+margin-bottom:25px;
+color:#8E24AA;
+}
+
+.poem-card{
+
+background:linear-gradient(135deg,#ffffff,#fff7fb);
+
+border-left:8px solid #E91E63;
+
+border-radius:22px;
+
+padding:35px;
+
+box-shadow:0 10px 35px rgba(0,0,0,.15);
+
+animation:fadeUp 1s ease;
+
+}
+
+.poem-badge{
+
+display:inline-block;
+
+background:#E91E63;
+
+color:white;
+
+padding:6px 18px;
+
+border-radius:50px;
+
+font-size:14px;
+
+margin-bottom:18px;
+
+}
+
+.poem-title{
+
+font-family:'Tiro Devanagari Marathi',serif;
+
+font-size:34px;
+
+color:#E91E63;
+
+margin-bottom:20px;
+
+}
+
+.poem-text{
+
+font-family:'Tiro Devanagari Marathi',serif;
+
+font-size:24px;
+
+line-height:2;
+
+color:#333;
+
+}
+
+.highlight{
+
+color:#E91E63;
+
+font-weight:bold;
+
+font-size:28px;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.poem-title{
+
+font-size:28px;
+
+}
+
+.poem-text{
+
+font-size:20px;
+
+}
+
+.poem-heading{
+
+font-size:28px;
+
+}
+
+}
+
+</style>
 
 <!-- GALLERY -->
 <section id="gallery">
