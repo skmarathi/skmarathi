@@ -192,37 +192,14 @@ font-size:30px;color:#fff;cursor:pointer
 <p>मराठी कलाकारांच्या खास बातम्या...</p>
 </section>
 
-from pathlib import Path
-html = """<!DOCTYPE html>
-<html lang="mr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>SKmarathi | मराठी चित्रपट, कविता व मनोरंजन</title>
-<style>
-body{font-family:sans-serif;background:#f4f4f4;color:#1B1464;margin:0}
-section{max-width:900px;margin:auto;padding:20px}
-.kavita-box{background:#fff;padding:20px;border-left:5px solid #E91E63;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
-.kavita-title{font-size:24px;color:#E91E63;font-weight:bold}
-.kavita-text{white-space:pre-line;line-height:1.8}
-</style></head><body>
+<!-- POEMS -->
 <section id="poems">
 <h2>✍️ आजची कविता</h2>
 <div class="kavita-box">
-<div class="kavita-title">🤍 सखी...</div>
-<div class="kavita-text">
-मी जरी मराठीतला <strong>"संदेश"</strong> असलो,
-तरी माझ्यासाठी तू बंगाली भाषेतला <strong>"संदेश"</strong> आहेस...
-
-आणि म्हणूनच,
-माझ्या आयुष्यातला सर्वात गोड <strong>"संदेश"</strong> तूच आहेस. 😊🌸🤍
-
-आणि हो...
-मला हा <strong>"संदेश"</strong> खूप आवडतो! 😋☺️
-</div>
+<div class="kavita-title" id="kavitaTitle"></div>
+<div class="kavita-text" id="kavitaText"></div>
 </div>
 </section>
-</body></html>"""
-path="/mnt/data/SKmarathi-index-updated.html"
-Path(path).write_text(html,encoding="utf-8")
-print(path)
 
 <!-- GALLERY -->
 <section id="gallery">
@@ -289,8 +266,3 @@ zoomImg.src=posterImg.src
 
 </body>
 </html>
-
-
-
-
-
