@@ -4,21 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SKmarathi | मराठी चित्रपट, कविता व मनोरंजन</title>
+<title>SKmarathi | जयंती २ मराठी चित्रपट | Marathi Movie Update</title>
 
-<meta name="description" content="SKmarathi – मराठी चित्रपट, सेलिब्रिटी गॉसिप, कविता, Instagram Reels व मनोरंजन">
-<meta name="keywords" content="SKmarathi, Marathi Entertainment, Marathi Kavita">
+<meta name="description" content="‘जयंती २’ आजपासून चित्रपटगृहात दाखल. शैलेश नरवाडे दिग्दर्शित या मराठी चित्रपटाची माहिती, कलाकार, निर्मिती टीम आणि सामाजिक विषयावरील खास अपडेट SKmarathi वर वाचा.">
+<meta name="keywords" content="SKmarathi, जयंती २, Jayanti 2, Marathi Movie, Marathi Cinema, Shailesh Narwade, Ruturaj Wankhede, Priyadarshini Indalkar">
 <meta name="author" content="Sandesh Khade">
 
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Baloo 2',cursive}
-html{scroll-behavior:smooth}
-body{background:#f4f4f4;color:#1B1464}
 
-/* NAV */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Baloo 2',cursive
+}
+
+html{
+scroll-behavior:smooth
+}
+
+body{
+background:#f4f4f4;
+color:#1B1464
+}
+
+/* ================= NAV ================= */
+
 nav{
 background:linear-gradient(45deg,#1B1464,#8E24AA);
 color:#fff;
@@ -30,52 +45,104 @@ position:sticky;
 top:0;
 z-index:1000
 }
-nav h1{font-size:22px}
-nav ul{list-style:none;display:flex;gap:10px}
+
+nav h1{
+font-size:22px
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:10px
+}
+
 nav a{
-color:#fff;text-decoration:none;
+color:#fff;
+text-decoration:none;
 padding:6px 14px;
 background:#3949ab;
 border-radius:20px;
 font-size:14px
 }
-.menu-btn{display:none;font-size:24px;cursor:pointer}
+
+.menu-btn{
+display:none;
+font-size:24px;
+cursor:pointer
+}
+
+/* ================= MOBILE NAV ================= */
 
 @media(max-width:768px){
+
 nav ul{
-position:absolute;top:60px;left:0;right:0;
+position:absolute;
+top:60px;
+left:0;
+right:0;
 background:#1B1464;
 flex-direction:column;
-display:none
-}
-nav ul.show{display:flex}
-.menu-btn{display:block}
+display:none;
+padding:10px
 }
 
-/* BREAKING */
+nav ul.show{
+display:flex
+}
+
+.menu-btn{
+display:block
+}
+
+}
+
+/* ================= BREAKING NEWS ================= */
+
 .breaking-news{
-background:#E91E63;color:#fff;
+background:#E91E63;
+color:#fff;
 padding:8px;
 overflow:hidden;
 white-space:nowrap
 }
+
 .breaking-news span{
 display:inline-block;
 animation:scroll 14s linear infinite
 }
+
 @keyframes scroll{
-from{transform:translateX(100%)}
-to{transform:translateX(-100%)}
+from{
+transform:translateX(100%)
+}
+to{
+transform:translateX(-100%)
+}
 }
 
-/* SECTIONS */
-section{padding:20px;max-width:1200px;margin:auto}
-h2{margin-bottom:10px}
+/* ================= SECTIONS ================= */
 
-/* HERO */
-.hero img{width:100%;max-height:400px;object-fit:cover;border-radius:10px}
+section{
+padding:20px;
+max-width:1200px;
+margin:auto
+}
 
-/* POSTER */
+h2{
+margin-bottom:10px
+}
+
+/* ================= HERO ================= */
+
+.hero img{
+width:100%;
+max-height:400px;
+object-fit:cover;
+border-radius:10px
+}
+
+/* ================= OLD POSTER ================= */
+
 .poster img{
 width:100%;
 border-radius:15px;
@@ -83,31 +150,175 @@ box-shadow:0 6px 15px rgba(0,0,0,.3);
 cursor:pointer
 }
 
-/* KAVITA */
-.kavita-box{
+/* ================= JAYANTI 2 ARTICLE ================= */
+
+.article{
 background:#fff;
-padding:15px;
-border-left:5px solid #E91E63;
-border-radius:8px
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.12);
+margin-top:15px;
+color:#333
 }
-.kavita-title{font-weight:bold;color:#E91E63}
-.kavita-text{white-space:pre-line}
 
-/* GALLERY */
+.article h1{
+font-family:'Tiro Devanagari Marathi',serif;
+font-size:34px;
+line-height:1.4;
+color:#1B1464;
+margin-bottom:10px
+}
+
+.article .date{
+color:#777;
+font-size:14px;
+margin-bottom:20px
+}
+
+.article-image{
+display:block;
+width:100%;
+max-width:850px;
+max-height:650px;
+object-fit:cover;
+margin:10px auto 25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15)
+}
+
+.article h3{
+font-family:'Tiro Devanagari Marathi',serif;
+color:#8E24AA;
+font-size:25px;
+margin:25px 0 10px
+}
+
+.article p{
+font-family:'Tiro Devanagari Marathi',serif;
+font-size:19px;
+line-height:2;
+margin-bottom:12px
+}
+
+.article ul{
+padding-left:25px;
+font-family:'Tiro Devanagari Marathi',serif;
+font-size:18px;
+line-height:2
+}
+
+.article strong{
+color:#E91E63
+}
+
+/* ================= TAGS ================= */
+
+.tags{
+margin-top:20px;
+display:flex;
+flex-wrap:wrap;
+gap:8px
+}
+
+.tag{
+background:#f3e5f5;
+color:#8E24AA;
+padding:5px 12px;
+border-radius:20px;
+font-size:14px
+}
+
+/* ================= POEM ================= */
+
+.poem-section{
+padding:40px 20px
+}
+
+.poem-heading{
+text-align:center;
+font-size:34px;
+margin-bottom:25px;
+color:#8E24AA
+}
+
+.poem-card{
+background:linear-gradient(135deg,#ffffff,#fff7fb);
+border-left:8px solid #E91E63;
+border-radius:22px;
+padding:35px;
+box-shadow:0 10px 35px rgba(0,0,0,.15);
+animation:fadeUp 1s ease
+}
+
+.poem-badge{
+display:inline-block;
+background:#E91E63;
+color:white;
+padding:6px 18px;
+border-radius:50px;
+font-size:14px;
+margin-bottom:18px
+}
+
+.poem-title{
+font-family:'Tiro Devanagari Marathi',serif;
+font-size:34px;
+color:#E91E63;
+margin-bottom:20px
+}
+
+.poem-text{
+font-family:'Tiro Devanagari Marathi',serif;
+font-size:24px;
+line-height:2;
+color:#333
+}
+
+.highlight{
+color:#E91E63;
+font-weight:bold;
+font-size:28px
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px)
+}
+
+to{
+opacity:1;
+transform:translateY(0)
+}
+
+}
+
+/* ================= GALLERY ================= */
+
 .gallery{
-display:flex;flex-wrap:wrap;justify-content:center
+display:flex;
+flex-wrap:wrap;
+justify-content:center
 }
+
 .gallery img{
-width:150px;margin:6px;border-radius:10px
+width:150px;
+margin:6px;
+border-radius:10px
 }
 
-/* REELS */
+/* ================= REELS ================= */
+
 iframe{
-width:100%;height:420px;
-border-radius:10px;border:none
+width:100%;
+height:420px;
+border-radius:10px;
+border:none
 }
 
-/* CONTACT */
+/* ================= CONTACT ================= */
+
 input,textarea{
 width:100%;
 max-width:600px;
@@ -116,13 +327,18 @@ margin-bottom:10px;
 border-radius:6px;
 border:1px solid #ccc
 }
+
 button{
-background:#8E24AA;color:#fff;
+background:#8E24AA;
+color:#fff;
 padding:10px 20px;
-border:none;border-radius:6px
+border:none;
+border-radius:6px;
+cursor:pointer
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer{
 background:#1B1464;
 color:#fff;
@@ -130,7 +346,8 @@ text-align:center;
 padding:15px
 }
 
-/* ZOOM */
+/* ================= ZOOM ================= */
+
 #zoom{
 display:none;
 position:fixed;
@@ -140,63 +357,302 @@ justify-content:center;
 align-items:center;
 z-index:2000
 }
-#zoom img{max-width:95%;max-height:95%}
-#zoom span{
-position:absolute;top:20px;right:30px;
-font-size:30px;color:#fff;cursor:pointer
+
+#zoom img{
+max-width:95%;
+max-height:95%
 }
+
+#zoom span{
+position:absolute;
+top:20px;
+right:30px;
+font-size:30px;
+color:#fff;
+cursor:pointer
+}
+
+/* ================= MOBILE ARTICLE ================= */
+
+@media(max-width:768px){
+
+.article{
+padding:18px
+}
+
+.article h1{
+font-size:27px
+}
+
+.article h3{
+font-size:22px
+}
+
+.article p{
+font-size:17px;
+line-height:1.9
+}
+
+.article ul{
+font-size:16px
+}
+
+.poem-title{
+font-size:28px
+}
+
+.poem-text{
+font-size:20px
+}
+
+.poem-heading{
+font-size:28px
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- BREAKING -->
+<!-- ================= BREAKING NEWS ================= -->
+
 <div class="breaking-news">
-<span>🔥 SKmarathi | मराठी चित्रपट | कविता | Instagram Reels</span>
+<span>
+🔥 SKmarathi | ‘जयंती २’ आजपासून चित्रपटगृहात | मराठी चित्रपट | कविता | मनोरंजन
+</span>
 </div>
 
-<!-- NAV -->
+<!-- ================= NAVIGATION ================= -->
+
 <nav>
+
 <h1>SKmarathi</h1>
+
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
 <ul id="navMenu">
-<li><a href="#home">मुख्यपृष्ठ</a></li>
-<li><a href="#movies">चित्रपट</a></li>
-<li><a href="#celebs">सेलिब्रिटी</a></li>
-<li><a href="#poems">कविता</a></li>
-<li><a href="#gallery">गॅलरी</a></li>
-<li><a href="#contact">संपर्क</a></li>
+
+<li>
+<a href="#home">मुख्यपृष्ठ</a>
+</li>
+
+<li>
+<a href="#movies">चित्रपट</a>
+</li>
+
+<li>
+<a href="#celebs">सेलिब्रिटी</a>
+</li>
+
+<li>
+<a href="#poems">कविता</a>
+</li>
+
+<li>
+<a href="#gallery">गॅलरी</a>
+</li>
+
+<li>
+<a href="#contact">संपर्क</a>
+</li>
+
 </ul>
+
 </nav>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
+
 <section id="home" class="hero">
-<img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/skmarathiofficial-bn.jpg">
-<h2 style="text-align:center">मराठी मनोरंजनाची संपूर्ण माहिती एका क्लिकवर</h2>
+
+<img
+src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/skmarathiofficial-bn.jpg"
+alt="SKmarathi मराठी मनोरंजन">
+
+<h2 style="text-align:center">
+मराठी मनोरंजनाची संपूर्ण माहिती एका क्लिकवर
+</h2>
+
 </section>
 
-<!-- POSTER -->
+<!-- ================= 2025 POSTER ================= -->
+
 <section class="poster">
+
 <h2>✨ 2025 Special Poster</h2>
-<img src="https://github.com/skmarathi/skmarathi/blob/main/2025%20Poster.jpg?raw=true" id="posterImg"></section>
 
-<!-- MOVIES -->
+<img
+src="https://github.com/skmarathi/skmarathi/blob/main/2025%20Poster.jpg?raw=true"
+id="posterImg"
+alt="SKmarathi 2025 Poster">
+
+</section>
+
+<!-- =====================================================
+     MOVIES / JAYANTI 2 ARTICLE
+     Poster file name: jayanti-2.jpg
+     ===================================================== -->
+
 <section id="movies">
+
 <h2>🎬 चित्रपट अपडेट्स</h2>
-<p>लवकरच नवीन मराठी चित्रपटांची माहिती...</p>
+
+<article class="article">
+
+<h1>
+‘जयंती २’ आजपासून चित्रपटगृहात; सामाजिक प्रश्नांवर भाष्य करणारा सिनेमा, ‘चर्चा तर होणारच!’
+</h1>
+
+<div class="date">
+📅 ११ सप्टेंबर २०२६ &nbsp; | &nbsp; ✍️ SKmarathi
+</div>
+
+<!-- JAYANTI 2 POSTER -->
+<img
+src="jayanti-2.jpg"
+class="article-image"
+alt="जयंती २ मराठी चित्रपट">
+
+<p>
+मराठी चित्रपटसृष्टीत सामाजिक आशय असलेल्या चित्रपटांना नेहमीच एक वेगळे स्थान मिळाले आहे. याच पार्श्वभूमीवर <strong>‘जयंती २’</strong> हा चित्रपट आज, <strong>११ सप्टेंबर २०२६</strong> पासून चित्रपटगृहात दाखल झाला आहे. <strong>‘चर्चा तर होणारच!’</strong> या लक्षवेधी टॅगलाइनमुळे चित्रपटाच्या विषयाबद्दल उत्सुकता निर्माण झाली आहे.
+</p>
+
+<h3>
+‘जयंती २’मध्ये नेमकं काय पाहायला मिळणार?
+</h3>
+
+<p>
+<strong>शैलेश नरवाडे</strong> यांच्या दिग्दर्शनाखाली तयार झालेल्या या चित्रपटातून विद्यार्थी जीवन, सामाजिक प्रश्न, भेदभाव आणि शिक्षणाच्या प्रवासाशी संबंधित मुद्द्यांकडे पाहण्याचा प्रयत्न करण्यात आला आहे. त्यामुळे हा चित्रपट केवळ मनोरंजनापुरता मर्यादित न राहता काही महत्त्वाचे प्रश्न प्रेक्षकांसमोर मांडण्याचा प्रयत्न करतो.
+</p>
+
+<h3>
+सामाजिक विषय आणि चित्रपटाचा संदेश
+</h3>
+
+<p>
+समाजातील भेदभाव, विद्यार्थ्यांसमोरील अडचणी आणि समानतेचा विचार हे सामाजिक विषय आजही महत्त्वाचे आहेत. या विषयांना चित्रपटाच्या माध्यमातून मांडण्याचा प्रयत्न <strong>‘जयंती २’</strong>मध्ये करण्यात आला आहे. अशा विषयांवर चित्रपटगृहाबाहेरही चर्चा व्हावी, हा या सिनेमाच्या मांडणीचा महत्त्वाचा भाग ठरतो.
+</p>
+
+<h3>
+दिग्दर्शक शैलेश नरवाडे आणि कलाकारांची टीम
+</h3>
+
+<p>
+या चित्रपटाचे दिग्दर्शन तसेच कथा, पटकथा आणि संवादलेखनाची जबाबदारी <strong>शैलेश नरवाडे</strong> यांनी सांभाळली आहे.
+</p>
+
+<ul>
+
+<li>ऋतुराज वानखेडे</li>
+<li>प्रियदर्शिनी इंदलकर</li>
+<li>पायल जाधव</li>
+<li>रोहिणी हट्टंगडी</li>
+<li>देविका दफ्तरदार</li>
+<li>विजय निकम</li>
+<li>राजकुमार जरांगे</li>
+<li>मानसी सुभाष</li>
+
+</ul>
+
+<h3>
+निर्मिती आणि तांत्रिक टीम
+</h3>
+
+<p>
+<strong>Meliorist Film Studio</strong> निर्मित या चित्रपटाची निर्मिती प्रक्रिया मोठ्या टीमच्या सहकार्याने पूर्ण झाली आहे.
+</p>
+
+<ul>
+
+<li><strong>Executive Producers:</strong> Dr. Suhas Ambade, Dr. Leena Nishant Bansod</li>
+
+<li><strong>Associate Producers:</strong> Sudhir Bagde, Dr. Rahul Jawale, Dr. Manav Pagare</li>
+
+<li>छायांकन — Sanjivkumar Hilli</li>
+
+<li>संपादन — Faisal Mahadik</li>
+
+<li>Sound Designer — Mayur Bakshi</li>
+
+<li>Background Music — Mangesh Dhakde</li>
+
+<li>Music — Onkarswaroop</li>
+
+<li>DI Colorist — Yogesh Dixit</li>
+
+<li>CGI & VFX — Magicstream VFX</li>
+
+<li>Publicity Design — Brain On Rent</li>
+
+<li>Distribution — Sunshine Studios</li>
+
+</ul>
+
+<h3>
+‘जयंती २’ का पाहावा?
+</h3>
+
+<p>
+मराठी चित्रपटांमधून सामाजिक विषयांकडे पाहणाऱ्या प्रेक्षकांसाठी <strong>‘जयंती २’</strong> हा एक लक्षवेधी पर्याय ठरू शकतो. चित्रपटाचा सामाजिक आशय, कलाकारांची टीम आणि <strong>‘चर्चा तर होणारच!’</strong> ही भूमिका यामुळे या सिनेमाकडे प्रेक्षकांचे लक्ष वेधले गेले आहे.
+</p>
+
+<h3>
+‘चर्चा तर होणारच!’
+</h3>
+
+<p>
+काही चित्रपट केवळ कथा सांगून थांबत नाहीत, तर त्यातून मांडलेल्या विषयावर प्रेक्षकांनी विचार करावा आणि चर्चा करावी अशी अपेक्षा असते. ‘जयंती २’ची टॅगलाइनही याच दिशेने लक्ष वेधते. आता हा चित्रपट प्रेक्षकांना किती भावतो, हे चित्रपटगृहातील प्रतिसादातून समोर येईल.
+</p>
+
+<p>
+🎬 <strong>तुम्ही ‘जयंती २’ पाहिला आहे का?</strong><br>
+तुमचा अनुभव SKmarathi सोबत कमेंटमध्ये नक्की शेअर करा.
+</p>
+
+<!-- TAGS -->
+
+<div class="tags">
+
+<span class="tag">जयंती २</span>
+
+<span class="tag">Jayanti 2</span>
+
+<span class="tag">Marathi Movie</span>
+
+<span class="tag">Marathi Cinema</span>
+
+<span class="tag">Shailesh Narwade</span>
+
+<span class="tag">Ruturaj Wankhede</span>
+
+<span class="tag">SKmarathi</span>
+
+</div>
+
+</article>
+
 </section>
 
-<!-- CELEBS -->
+<!-- ================= CELEBRITY ================= -->
+
 <section id="celebs">
+
 <h2>🌟 सेलिब्रिटी गॉसिप</h2>
-<p>मराठी कलाकारांच्या खास बातम्या...</p>
+
+<p>
+मराठी कलाकारांच्या खास बातम्या...
+</p>
+
 </section>
 
-<!-- POEMS -->
-<!-- ===== आजची कविता ===== -->
+<!-- ================= POEM ================= -->
+
 <section id="poems" class="poem-section">
 
-<h2 class="poem-heading">🌸 आजची कविता</h2>
+<h2 class="poem-heading">
+🌸 आजची कविता
+</h2>
 
 <div class="poem-card">
 
@@ -240,194 +696,190 @@ font-size:30px;color:#fff;cursor:pointer
 
 </section>
 
-<style>
+<!-- ================= GALLERY ================= -->
 
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap');
-
-.poem-section{
-padding:40px 20px;
-}
-
-.poem-heading{
-text-align:center;
-font-size:34px;
-margin-bottom:25px;
-color:#8E24AA;
-}
-
-.poem-card{
-
-background:linear-gradient(135deg,#ffffff,#fff7fb);
-
-border-left:8px solid #E91E63;
-
-border-radius:22px;
-
-padding:35px;
-
-box-shadow:0 10px 35px rgba(0,0,0,.15);
-
-animation:fadeUp 1s ease;
-
-}
-
-.poem-badge{
-
-display:inline-block;
-
-background:#E91E63;
-
-color:white;
-
-padding:6px 18px;
-
-border-radius:50px;
-
-font-size:14px;
-
-margin-bottom:18px;
-
-}
-
-.poem-title{
-
-font-family:'Tiro Devanagari Marathi',serif;
-
-font-size:34px;
-
-color:#E91E63;
-
-margin-bottom:20px;
-
-}
-
-.poem-text{
-
-font-family:'Tiro Devanagari Marathi',serif;
-
-font-size:24px;
-
-line-height:2;
-
-color:#333;
-
-}
-
-.highlight{
-
-color:#E91E63;
-
-font-weight:bold;
-
-font-size:28px;
-
-}
-
-@keyframes fadeUp{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.poem-title{
-
-font-size:28px;
-
-}
-
-.poem-text{
-
-font-size:20px;
-
-}
-
-.poem-heading{
-
-font-size:28px;
-
-}
-
-}
-
-</style>
-
-<!-- GALLERY -->
 <section id="gallery">
+
 <h2>📸 फोटो गॅलरी</h2>
+
 <div class="gallery">
-<a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg" data-lightbox="g">
-<img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg">
+
+<a
+href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg"
+data-lightbox="g">
+
+<img
+src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery1.jpg"
+alt="SKmarathi Gallery 1">
+
 </a>
-<a href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg" data-lightbox="g">
-<img src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg">
+
+<a
+href="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg"
+data-lightbox="g">
+
+<img
+src="https://raw.githubusercontent.com/skmarathi/skmarathi/main/gallery2.jpg"
+alt="SKmarathi Gallery 2">
+
 </a>
+
 </div>
+
 </section>
 
-<!-- REELS -->
+<!-- ================= INSTAGRAM REELS ================= -->
+
 <section>
+
 <h2>📷 Instagram Reels</h2>
-<iframe src="https://www.instagram.com/reel/DE7xmxwsL5Y/embed"></iframe>
+
+<iframe
+src="https://www.instagram.com/reel/DE7xmxwsL5Y/embed"
+title="SKmarathi Instagram Reel">
+</iframe>
+
 </section>
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
+
 <section id="contact">
+
 <h2>📬 संपर्क करा</h2>
-<form action="https://formsubmit.co/skmarathiofficial@gmail.com" method="POST">
-<input type="text" name="name" placeholder="नाव" required>
-<input type="email" name="email" placeholder="ईमेल" required>
-<textarea name="message" placeholder="तुमचा संदेश" required></textarea>
-<input type="hidden" name="_captcha" value="false">
-<button type="submit">पाठवा</button>
+
+<form
+action="https://formsubmit.co/skmarathiofficial@gmail.com"
+method="POST">
+
+<input
+type="text"
+name="name"
+placeholder="नाव"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="ईमेल"
+required>
+
+<textarea
+name="message"
+placeholder="तुमचा संदेश"
+required>
+</textarea>
+
+<input
+type="hidden"
+name="_captcha"
+value="false">
+
+<button type="submit">
+पाठवा
+</button>
+
 </form>
+
 </section>
 
-<!-- ZOOM -->
+<!-- ================= ZOOM ================= -->
+
 <div id="zoom">
-<span onclick="zoom.style.display='none'">×</span>
-<img id="zoomImg">
+
+<span onclick="closeZoom()">×</span>
+
+<img
+id="zoomImg"
+alt="Zoomed poster">
+
 </div>
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
+
 © 2026 SKmarathi | All Rights Reserved
+
 </footer>
 
+<!-- ================= SCRIPTS ================= -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 <script>
+
+/* MOBILE MENU */
+
 function toggleMenu(){
-document.getElementById("navMenu").classList.toggle("show")
+
+document
+.getElementById("navMenu")
+.classList
+.toggle("show");
+
 }
 
-/* KAVITA */
-const kavita=[
-{title:"उधाणलेल्या आठवणी",text:"उधाणले तुझ्या आठवणींचं गार वाऱ्यावरचं गाणं..."},
-{title:"आभाळ",text:"नीळसर त्या आभाळात, विचार माझे हरवले..."}
-]
-let i=new Date().getDate()%kavita.length
-kavitaTitle.innerText=kavita[i].title
-kavitaText.innerText=kavita[i].text
 
-/* ZOOM */
-posterImg.onclick=()=>{
-zoom.style.display="flex"
-zoomImg.src=posterImg.src
+/* MOBILE MENU CLICK केल्यानंतर बंद */
+
+document
+.querySelectorAll("#navMenu a")
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+document
+.getElementById("navMenu")
+.classList
+.remove("show");
+
+});
+
+});
+
+
+/* POSTER ZOOM */
+
+const posterImg =
+document.getElementById("posterImg");
+
+const zoom =
+document.getElementById("zoom");
+
+const zoomImg =
+document.getElementById("zoomImg");
+
+
+posterImg.onclick = function(){
+
+zoom.style.display = "flex";
+
+zoomImg.src = posterImg.src;
+
+};
+
+
+/* ZOOM CLOSE */
+
+function closeZoom(){
+
+zoom.style.display = "none";
+
 }
+
+
+/* BACKGROUND वर click केल्यावर zoom बंद */
+
+zoom.onclick = function(e){
+
+if(e.target === zoom){
+
+zoom.style.display = "none";
+
+}
+
+};
+
 </script>
 
 </body>
